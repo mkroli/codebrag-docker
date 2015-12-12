@@ -20,6 +20,7 @@ RUN apt-get update && \
     rm -rf /root/.sbt /root/.ivy2 /root/.npm && \
     mkdir /repos
 ADD application.conf logback.xml /opt/codebrag/
+ADD ssh.config /root/.ssh/config
 
 WORKDIR /opt/codebrag
 EXPOSE 8080
