@@ -1,7 +1,7 @@
 FROM java:8-jdk
 MAINTAINER mkroli@yahoo.de
 
-ENV CODEBRAG_TAG=v2.3.2
+ENV CODEBRAG_TAG=v2.3.3
 
 RUN apt-get update && \
     apt-get -y install nodejs npm git && \
